@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Tips - Soccer Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Pro Tips</h1>
+    <p>Your Source for Soccer Predictions</p>
+</header>
+
+<!-- Main Section -->
+<div class="container">
+    <h2>Welcome to Pro Tips!</h2>
+    <p>We provide expert soccer predictions to help you make better choices for your bets.</p>
+    
+    <!-- Prediction Form -->
+    <div class="prediction-form">
+        <h3>Enter your prediction</h3>
+        <form id="prediction-form">
+            <label for="team1">Team 1:</label>
+            <input type="text" id="team1" placeholder="Enter Team 1" required><br>
+            
+            <label for="team2">Team 2:</label>
+            <input type="text" id="team2" placeholder="Enter Team 2" required><br>
+            
+            <label for="prediction">Your Prediction:</label>
+            <select id="prediction" required>
+                <option value="win1">Team 1 Wins</option>
+                <option value="draw">Draw</option>
+                <option value="win2">Team 2 Wins</option>
+            </select><br>
+            
+            <button type="submit">Submit Prediction</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>Created by Saleh</p>
+</footer>
+
+</body>
+</html>

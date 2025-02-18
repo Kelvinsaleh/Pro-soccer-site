@@ -3,48 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Tips - Soccer Predictions</title>
+    <title>SureBetStats - Football Predictions</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            color: #333;
+        }
+        header {
+            background: #1b5e20;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #hero {
+            background: #2e7d32;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .prediction-list, .fantasy-league, .weekend-betslip, .admin-panel, .pinned-predictions {
+            padding: 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(to bottom, #1b5e20, #4e342e);
+            color: white;
+            position: relative;
+        }
+        .footer-content {
+            display: none;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+        .footer-toggle {
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            background: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleFooter() {
+            var content = document.getElementById("footer-content");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
-
-<!-- Header Section -->
-<header>
-    <h1>Pro Tips</h1>
-    <p>Your Source for Soccer Predictions</p>
-</header>
-
-<!-- Main Section -->
-<div class="container">
-    <h2>Welcome to Pro Tips!</h2>
-    <p>We provide expert soccer predictions to help you make better choices for your bets.</p>
+    <header>
+        <h1>SureBetStats</h1>
+        <nav>
+            <ul>
+                <li><a href="#predictions">Predictions</a></li>
+                <li><a href="#fantasy-league">Fantasy League</a></li>
+                <li><a href="#weekend-betslip">Weekend Betslip</a></li>
+                <li><a href="#admin-panel">Admin Panel</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- Prediction Form -->
-    <div class="prediction-form">
-        <h3>Enter your prediction</h3>
-        <form id="prediction-form">
-            <label for="team1">Team 1:</label>
-            <input type="text" id="team1" placeholder="Enter Team 1" required><br>
-            
-            <label for="team2">Team 2:</label>
-            <input type="text" id="team2" placeholder="Enter Team 2" required><br>
-            
-            <label for="prediction">Your Prediction:</label>
-            <select id="prediction" required>
-                <option value="win1">Team 1 Wins</option>
-                <option value="draw">Draw</option>
-                <option value="win2">Team 2 Wins</option>
-            </select><br>
-            
-            <button type="submit">Submit Prediction</button>
-        </form>
-    </div>
-</div>
-
-<!-- Footer Section -->
-<footer class="footer">
-    <p>Created by Saleh</p>
-</footer>
-
+    <section id="hero">
+        <h2>Expert Football Predictions</h2>
+        <p>Get the most accurate football match predictions from expert sources.</p>
+    </section>
+    
+    <section id="predictions">
+        <h2>Today's Predictions</h2>
+        <div class="prediction-list">
+            <!-- Match predictions will be dynamically inserted here -->
+        </div>
+    </section>
+    
+    <section id="fantasy-league">
+        <h2>Fantasy League Predictions</h2>
+        <div class="fantasy-league">
+            <!-- Fantasy League predictions will be dynamically inserted here -->
+        </div>
+    </section>
+    
+    <section id="weekend-betslip">
+        <h2>Weekend Betslip</h2>
+        <div class="weekend-betslip">
+            <!-- Weekend betslip predictions will be dynamically inserted here -->
+        </div>
+    </section>
+    
+    <section id="pinned-predictions">
+        <h2>Pinned Predictions</h2>
+        <div class="pinned-predictions">
+            <p>Here you can showcase key bets that you want to highlight.</p>
+        </div>
+    </section>
+    
+    <section id="admin-panel">
+        <h2>Admin Panel</h2>
+        <div class="admin-panel">
+            <p>Only you can add and update predictions here.</p>
+            <form>
+                <label for="match">Match:</label>
+                <input type="text" id="match" name="match" required>
+                <label for="prediction">Prediction:</label>
+                <input type="text" id="prediction" name="prediction" required>
+                <button type="submit">Add Prediction</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About SureBetStats</h2>
+        <p>SureBetStats provides expert football match predictions based on data analytics and trusted sources.</p>
+    </section>
+    
+    <footer>
+        <div class="footer-toggle" onclick="toggleFooter()">Toggle Footer Info</div>
+        <div id="footer-content" class="footer-content">
+            <p>Contact us: info@surebetstats.com</p>
+            <p>Follow us on social media</p>
+        </div>
+        <p>&copy; 2025 SureBetStats. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

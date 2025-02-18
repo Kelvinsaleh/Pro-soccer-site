@@ -99,7 +99,8 @@
     <section id="predictions">
         <h2>Today's Predictions</h2>
         <div class="prediction-list">
-            <!-- Match predictions will be dynamically inserted here -->
+            <!--  Aston Villa  vs Liverpool  anytime goal scorer MO Salah
+                  Real Madrid vs Manchester City   NG-->
         </div>
     </section>
     
